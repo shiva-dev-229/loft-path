@@ -1,0 +1,253 @@
+[
+	{
+		"id": "start",
+		"text": "The wreckage still ticks and steams in the trees behind you, and the lagoon lies flat and bright in the morning heat. Boys are scattered along the sand, and not one adult among them. Already two groups are forming the way iron filings arrange themselves around a magnet \u2014 some boys talk of fire and shelter and rules, while others slip off toward the green dark of the jungle with a bright, hungry look in their eyes. Whatever you choose now, the island is watching to see what kind of boy you will become.",
+		"choices": [
+			{ "label": "Stay on the beach with the ones building order \u2014 The Civilized", "nextId": "the_civilized" },
+			{ "label": "Follow the ones disappearing into the jungle \u2014 The Hunters", "nextId": "the_hunters" }
+		]
+	},
+
+	{
+		"id": "the_civilized",
+		"text": "You sit in the circle around the conch. The talk here is of being found: of smoke that climbs to the sky, of huts against the rain, of a place agreed upon for fresh water and another, downwind, for waste. It sounds dull next to the war-whoops drifting up from the shore, but it is the dull things that keep a person human. Someone has to do the work that rescue is built out of. The question is whether you lead the others or simply put your head down and build.",
+		"choices": [
+			{ "label": "Take charge and try to hold the group together \u2014 Leader", "nextId": "leader" },
+			{ "label": "Skip the politics and join the work \u2014 Builder", "nextId": "builders" }
+		]
+	},
+
+	{
+		"id": "leader",
+		"text": "You take up the conch and find that your voice carries when you let it. The littluns quiet; even some of the bigger boys listen. But leadership is not a shell in your hand \u2014 it is a thing you have to feed every single day, and the moment the laughter on the beach sounds better than the work on the hill, your words start to thin into air. You can keep clutching the symbol and insist that rules alone will hold, or you can go put your own hands on the work and lead by doing it.",
+		"choices": [
+			{ "label": "Insist on the rules and the conch \u2014 reason will be enough", "nextId": "leader_splinter" },
+			{ "label": "Stop talking and go build the shelters yourself", "nextId": "builders" }
+		]
+	},
+
+	{
+		"id": "leader_splinter",
+		"text": "You strike the conch on the rock for order, again and again, but the sound of it grows thinner each time. The boys stop out of habit now, not belief. One by one they drift toward Jack's fires and his meat and his painted, easy promises, until you are holding a white shell in an empty clearing and shouting rules at the trees. Reason was never enough on its own. It needed hands, and warmth, and someone willing to do the work \u2014 and you spent your strength on the talking while the tribe ate well and forgot your name.",
+		"ending": "lose"
+	},
+
+	{
+		"id": "builders",
+		"text": "The real labor of the camp lands here, with the builders \u2014 shelter, smoke, sanitation, the unglamorous skeleton a rescue gets hung upon. The other boys have already split into those who plan and those who haul. You can throw in with the architects who are arguing over how the camp *should* be laid out, or just grab a tool and start dragging materials out of the jungle right now.",
+		"choices": [
+			{ "label": "Join the architects and plan the camp properly", "nextId": "architects" },
+			{ "label": "Skip the planning and go gather materials now", "nextId": "getting_materials" }
+		]
+	},
+
+	{
+		"id": "architects",
+		"text": "The architects squat in the sand and argue over the camp the way grown men argue over blueprints. Two problems shout the loudest. The huts they have thrown up are flimsy, and the first real wind will test them. And no one agreed on where to relieve themselves, so the boys have been going wherever they please \u2014 and on a hot island, that is how sickness starts. You can only put your weight behind one problem first.",
+		"choices": [
+			{ "label": "Reinforce the shelters before the weather turns \u2014 Make huts", "nextId": "make_huts" },
+			{ "label": "Dig proper latrines away from camp \u2014 Make toilets", "nextId": "make_toilets" }
+		]
+	},
+
+	{
+		"id": "make_huts",
+		"text": "You lash branch to branch, weaving the walls tighter, packing the gaps with broad leaves and mud. It is slow; the others lose patience and wander off, and by dusk only you and a couple of stubborn boys are still tying knots. That night the sky splits open. Rain comes sideways and the wind leans on the huts with a low animal groan, and the work is put on trial in the dark. One hut folds with a wet crack \u2014 but the one you reinforced holds, sheltering a knot of shivering littluns through the worst of it.",
+		"choices": [
+			{ "label": "Good enough \u2014 the camp is built, now go gather more", "nextId": "getting_materials" },
+			{ "label": "Push on and fix the toilets problem too", "nextId": "make_toilets" }
+		]
+	},
+
+	{
+		"id": "make_toilets",
+		"text": "You pace off a spot well downwind and downhill of the shelters and start digging. It is foul, thankless work, and the other boys jeer \u2014 right up until the day the careless ones start getting sick and the value of a proper latrine becomes obvious to everyone. The camp is healthier for it. But a healthy camp still needs to be a sturdy one, and either way it needs more raw material than you have on hand.",
+		"choices": [
+			{ "label": "Now go gather materials for the rest of the build", "nextId": "getting_materials" },
+			{ "label": "Double back and reinforce the huts before the rain", "nextId": "make_huts" }
+		]
+	},
+
+	{
+		"id": "getting_materials",
+		"text": "Building anything here means tearing it out of the island first \u2014 stout branches, vines for lashing, broad fronds for thatch. The thick wood at the jungle's edge is exactly what the camp needs, but it does not come away easily. There is an old fire-axe from the wreckage lying in the sand, or you can simply set to it with your bare hands like everyone else.",
+		"choices": [
+			{ "label": "Use the salvaged axe to cut the wood", "nextId": "use_axe" },
+			{ "label": "Tear the branches free with your hands", "nextId": "use_hands" }
+		]
+	},
+
+	{
+		"id": "use_axe",
+		"text": "The axe is the smart choice and you know it, but it is heavy and the head is loose, and on a clumsy backswing it skips off the wood and opens a gash across your hand. The wood comes faster this way \u2014 far faster \u2014 but now there is bright blood running down your wrist and dripping into the dirt, and on an island with no doctor, a cut is never just a cut.",
+		"choices": [
+			{ "label": "Go wash the wound out in the sea", "nextId": "go_wash" },
+			{ "label": "Leave it be \u2014 there's too much work to stop now", "nextId": "leave_it_be" }
+		]
+	},
+
+	{
+		"id": "use_hands",
+		"text": "You do it the slow way, wrenching the branches loose with your bare hands the way most of the boys do. It takes the better part of the day, and by the end your palms are a ruin of splinters, torn skin, and raw red blisters. You have your wood \u2014 but your hands are wrecked, and out here even a small wound is a door you would rather keep shut.",
+		"choices": [
+			{ "label": "Go wash your hands out in the sea", "nextId": "go_wash" },
+			{ "label": "Leave it be \u2014 there's too much work to stop now", "nextId": "leave_it_be" }
+		]
+	},
+
+	{
+		"id": "leave_it_be",
+		"text": "You tell yourself it is nothing and keep working, dirt ground deep into the open cuts. For a day it is only sore. Then the skin around the wound goes hot and tight and shining red, and a thin red line begins to crawl up the inside of your arm toward your heart. There is no medicine on the island and no one who knows what to do. The fever takes you within the week. The smallest carelessness, out here, is the most dangerous thing of all.",
+		"ending": "lose"
+	},
+
+	{
+		"id": "go_wash",
+		"text": "You wade in and let the cold salt water sting the grime out of the cuts, scrubbing until they run clean. It hurts like fire and that is how you know it is working. Dripping and raw, you climb back up the beach \u2014 the wounds are clean now, but clean isn't the same as safe. They are still open, and you have to cover them. The patient way is to dry the skin first so nothing damp gets trapped under the dressing; the fast way is to bind them straight off and get back to work.",
+		"choices": [
+			{ "label": "Dry the skin first, then wrap the wounds properly", "nextId": "dry_and_wrap" },
+			{ "label": "Wrap them straight away while they're still wet", "nextId": "wrap_wet" }
+		]
+	},
+
+	{
+		"id": "wrap_wet",
+		"text": "You're impatient, so you bind the wet cuts then and there and march back to the woodpile. But sealed in damp under the cloth, the wounds never get their chance to breathe. Within days the skin beneath the dressing has gone soft and grey and sour-smelling, and the infection you tried to outrun simply set up house where you couldn't see it. On this island the shortcut and the grave are very often the same path. The fever comes, and it does not break.",
+		"ending": "lose"
+	},
+
+	{
+		"id": "dry_and_wrap",
+		"text": "You pat the cuts dry with the cleanest scrap of cloth you have, and only once the skin is dry do you tear strips from a shirt and bind your hands snugly \u2014 clean, covered, protected from dirt and flies. They ache, but they are healing the way they should. Looking down at your bandaged hands, you feel something steadier than the fear that has hung over everyone since the crash: the quiet certainty that doing things properly is what keeps you alive. The camp is taking shape. Now you decide how far to push it.",
+		"choices": [
+			{ "label": "Keep working \u2014 gather a surplus the camp can lean on", "nextId": "keep_getting_materials" },
+			{ "label": "The camp has enough \u2014 lay down the tools and rest", "nextId": "leave_with_materials" }
+		]
+	},
+
+	{
+		"id": "keep_getting_materials",
+		"text": "You don't stop at enough. You keep hauling wood and vine and frond until the camp has a surplus \u2014 spare thatch for when a hut leaks, dry tinder kept back for the signal fire, reserves for the next storm before it arrives. It is more work than anyone asked of you, and your bound hands throb with every load. But preparation is just fear put to useful work, and you can feel the camp becoming a place that lasts rather than a place that merely survives the afternoon.",
+		"choices": [
+			{ "label": "Take the surplus tinder up to the signal fire on the hill", "nextId": "signal_rescue" },
+			{ "label": "Stop here, satisfied, and rest with the work done", "nextId": "leave_with_materials" }
+		]
+	},
+
+	{
+		"id": "leave_with_materials",
+		"text": "You decide the camp has what it needs and lay your tools down. The shelters stand, the latrine is dug, your hands are healing. Evening comes soft and gold over the lagoon, the huts hold, and there is fruit enough for the littluns. No one was rescued today \u2014 but no one was lost either, and on this island that is its own kind of victory. You did the dull, unglamorous, deeply human work of staying civilized one more day, and the smoke still climbs from the hill behind you, patient and pale, telling the world you are still here.",
+		"ending": "win"
+	},
+
+	{
+		"id": "signal_rescue",
+		"text": "You carry the saved tinder up to the ridge and build the signal fire tall and bright, then sit with it through the long glare of the afternoon, feeding it, refusing to let it die the way the others always do. Your throat is raw with smoke. Then \u2014 there. A shape hardening out of the heat-haze: a grey hull, a mast, a ship turning steadily toward the column of smoke going straight up into the windless sky. The work nobody wanted to do is the work that got you seen. They are coming. You are going home.",
+		"ending": "win"
+	},
+
+	{
+		"id": "the_hunters",
+		"text": "You follow the boys who don't want to wait to be rescued \u2014 they want to take. Jack moves at their head, low and quick, a sharpened stick on his shoulder and clay already drying on his face into a mask that hides the boy beneath. There is meat on this island, and mystery, and a freedom the circle around the conch will never offer. The jungle swallows the sound of the beach behind you. The island is yours to explore \u2014 the bare mountain where they say the beast lives, or the close green dark of the forest where the pigs run.",
+		"choices": [
+			{ "label": "Climb the mountain toward the beast", "nextId": "hunter_mountain" },
+			{ "label": "Push into the forest after the pigs", "nextId": "go_into_forest" }
+		]
+	},
+
+	{
+		"id": "hunter_mountain",
+		"text": "The climb is hard and the air thins and the others fall away below you until it is mostly just your own breath and the wind. Near the top, in the rocks, Piggy is resting \u2014 and the sun catches his thick spectacles, the only fire-making tools on the whole island. The beast is supposed to be up here somewhere, and you will want fire to face the dark of the summit. There are only two ways boys ever get a thing they want on this island: by asking, or by taking.",
+		"choices": [
+			{ "label": "Take Piggy's glasses by force", "nextId": "take_glasses_fire" },
+			{ "label": "Leave him be and climb on without fire", "nextId": "go_to_summit" }
+		]
+	},
+
+	{
+		"id": "take_glasses_fire",
+		"text": "You wrench the glasses off Piggy's face. He claws at the air, half-blind, pleading \u2014 and for a moment the whole arc of the island hangs on what you do with the thing in your hand. The lens can angle the sun into a wand of white heat and make fire out of nothing. Or you can do what the painted boys would cheer for, and treat a weaker boy as something to be broken.",
+		"choices": [
+			{ "label": "Use the lens to make fire, then hand them back", "nextId": "go_to_summit" },
+			{ "label": "Smash them and shove Piggy aside for the thrill of it", "nextId": "break_piggy" }
+		]
+	},
+
+	{
+		"id": "break_piggy",
+		"text": "You smash the glasses against the rock and shove Piggy away from the edge. He scrabbles, blind and terrified, and something in the watching boys goes quiet and pleased. It feels like power. It is not. You have destroyed the only fire-maker on the island for the cheap thrill of cruelty \u2014 no fire now, no smoke, no signal, and a boy left helpless in the dark for nothing. The beast everyone fears was never on the mountain. It was the thing that just moved through you, and it has the island now.",
+		"ending": "lose"
+	},
+
+	{
+		"id": "go_to_summit",
+		"text": "You push to the very top, where the wind moans and the stars hang close and cold. The shape lurches up out of the rocks and your whole body screams to run \u2014 but you make yourself look. It is a dead man. A parachutist, blown off course, his harness snarled so that each gust hauls him upright and drops him again in a slow, dreadful nodding. The beast is a corpse and a tangle of silk. There was never a monster up here at all \u2014 only fear, wearing a dead man's coat. Now you know, and knowing changes what you do next.",
+		"choices": [
+			{ "label": "Carry the truth back down and hunt with clear eyes", "nextId": "go_into_forest" },
+			{ "label": "Keep the terror to yourself and let the others fear it", "nextId": "hoard_fear" }
+		]
+	},
+
+	{
+		"id": "hoard_fear",
+		"text": "You say nothing. You let the others go on believing a monster prowls the mountain, because a frightened tribe is an obedient one and the fear feels, strangely, like something you own. But fear you feed instead of facing does not stay tame. It spreads, it sharpens, and one night it turns the whole painted circle against a shape stumbling out of the trees \u2014 and by the time anyone sees it was only a boy, it is far too late. You could have ended the fear with the truth. You chose to keep it, and it ate one of you.",
+		"ending": "lose"
+	},
+
+	{
+		"id": "go_into_forest",
+		"text": "The forest closes over you, green and close and full of small movements. The pigs leave trails through the undergrowth, and the hunters' chant rises and falls somewhere off to your left. Then you hear it \u2014 a heavy rustling in a thick bush just ahead, something big shifting its weight. Every boy on the island has a story about what lives in the green dark. Now there is one of them, an arm's length away, breathing.",
+		"choices": [
+			{ "label": "Creep closer and find out what it really is", "nextId": "track_noise" },
+			{ "label": "It's too close \u2014 turn and run back to camp", "nextId": "go_into_forest_run" }
+		]
+	},
+
+	{
+		"id": "go_into_forest_run",
+		"text": "You don't wait to find out. You crash back through the forest convinced the beastie was right at your shoulder, and the fear pours out of you onto every boy you tell. By the time you reach the others the story has grown teeth and claws. Maybe it really was just a pig. You'll never know now \u2014 but you can still climb up out of the panic and get a clear look at the land before the rumor swallows the whole camp.",
+		"choices": [
+			{ "label": "Climb a tall rock and survey the island to calm down", "nextId": "survey_rock" },
+			{ "label": "Steady yourself and go back to find the truth", "nextId": "track_noise" }
+		]
+	},
+
+	{
+		"id": "track_noise",
+		"text": "You hold your nerve and part the leaves. Crouched in the green hollow is no beast at all \u2014 just a fat island lizard, blinking up at you, more startled than you are. The thing the whole island has been terrified of, here, is a harmless creature in a bush. You let out a breath you didn't know you were holding. Fear, you're learning, is mostly a story boys tell each other in the dark. You back out steadier than you went in.",
+		"choices": [
+			{ "label": "Climb a tall rock and survey the island", "nextId": "survey_rock" },
+			{ "label": "Go straight on, deeper into the island after real game", "nextId": "hunting_pigs" }
+		]
+	},
+
+	{
+		"id": "survey_rock",
+		"text": "You climb a tall rock that breaks above the canopy and finally get a clear look at the island laid out around you \u2014 the ridges, the pig runs, the smoke of the camps. From up here the place is no longer a maze of frightening noises but a thing you can read. You can see where the pigs move and the line you'd need to take to bring meat back. The hunt has a shape now, and you understand it.",
+		"choices": [
+			{ "label": "Head deeper into the island and hunt the pigs", "nextId": "hunting_pigs" },
+			{ "label": "Climb down and go back into the forest the close way", "nextId": "go_into_forest" }
+		]
+	},
+
+	{
+		"id": "hunting_pigs",
+		"text": "You track a pig through the undergrowth for what feels like hours, the whole hunt narrowing to breath and footfall and the smell of the animal ahead. When it breaks cover you are ready, and the spears come down, and the thing that was alive is meat. The hunters howl. You have done what the tribe exists to do \u2014 fed it \u2014 and now there is the long carry back to the fire with the kill across your shoulders, and the oldest question there is waiting at the end of it.",
+		"choices": [
+			{ "label": "Carry it back, eat at the campfire with the others", "nextId": "eat_pig" },
+			{ "label": "Refuse the meat \u2014 you won't be part of the killing", "nextId": "starve" }
+		]
+	},
+
+	{
+		"id": "eat_pig",
+		"text": "You eat. The roast pig is the best thing you have ever tasted, and around the fire the boys are laughing, full, alive \u2014 not painted savages in this moment but just hungry children who finally got fed. Whatever else the hunt has cost, tonight it has done the one thing that matters: it has kept you all going. You sleep with a full belly and wake to another day on the island, still breathing, still here. You survive.",
+		"ending": "win"
+	},
+
+	{
+		"id": "starve",
+		"text": "You hold back \u2014 maybe out of pride, maybe out of some half-formed disgust at the howling and the blood. But the body doesn't care about your reasons. The fruit you can scavenge isn't enough, the hunger sharpens day by day into something that hollows you out from the inside, and a boy who won't eat the food in front of him on an island with nothing to spare does not last. You starve in the middle of plenty. Out here, refusing to live is just a slower way of choosing not to.",
+		"ending": "lose"
+	}
+]
