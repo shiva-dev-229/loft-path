@@ -113,7 +113,7 @@ function Footer() {
       <p className="text-xs text-amber-100/20">
         Code available at{' '}
         <a
-          href="https://github.com/shivansh-max/lotf-path"
+          href="https://github.com/shivansh-max/loft-path"
           target="_blank"
           rel="noopener noreferrer"
           className="underline hover:text-amber-100/40 transition-colors duration-200"
