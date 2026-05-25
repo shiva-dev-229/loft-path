@@ -106,9 +106,22 @@ function PathRecap({ choiceHistory }) {
 // ── Footer credit ──────────────────────────────────────────────────────────
 function Footer() {
   return (
-    <p className="mt-4 text-xs text-amber-100/20 text-center">
-      Created by Shivansh Upadhyay, Aryav Agarwal, Ayush Damodar, Haider Abbas, Vihaan Tandon &amp; Arnav Mahajan
-    </p>
+    <div className="mt-4 text-center space-y-1">
+      <p className="text-xs text-amber-100/20">
+        Created by Shivansh Upadhyay, Aryav Agarwal, Ayush Damodar, Haider Abbas, Vihaan Tandon &amp; Arnav Mahajan
+      </p>
+      <p className="text-xs text-amber-100/20">
+        Code available at{' '}
+        <a
+          href="https://github.com/shivansh-max/lotf-path"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-amber-100/40 transition-colors duration-200"
+        >
+          github.com/shivansh-max/lotf-path
+        </a>
+      </p>
+    </div>
   )
 }
 
